@@ -48,6 +48,12 @@ export interface Certification {
   link?: string;
 }
 
+export interface CustomSection {
+  id: string;
+  title: string;
+  content: string;
+}
+
 export interface ResumeData {
   personalInfo: {
     fullName: string;
@@ -64,6 +70,7 @@ export interface ResumeData {
   projects: Project[];
   awards: Award[];
   certifications: Certification[];
+  customSections: CustomSection[];
   templateId: string;
 }
 
